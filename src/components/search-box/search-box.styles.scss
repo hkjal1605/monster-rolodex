@@ -1,0 +1,29 @@
+.input {
+
+    &__search {
+        font-size: 1.4rem;
+        padding: .8rem;
+        margin-top: 2rem;
+
+        &:focus {
+            outline: none;
+        }
+    }
+    
+    &__label {
+        font-size: 1.2rem;
+        font-weight: 400;
+        margin-left: -8rem;
+        margin-top: .7rem;
+        display: block;
+        transition: all .3s;
+        margin-bottom: 1rem;
+    }
+    
+    &__search:placeholder-shown + &__label {
+        opacity: 0;
+        visibility: hidden;
+        transform: translateY(-3rem);
+    }
+
+}
